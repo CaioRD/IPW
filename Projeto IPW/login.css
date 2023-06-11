@@ -436,3 +436,252 @@ header a .logo #movie{
 }
 
 
+
+
+
+/*PÁGINA DE LOGIN*/
+
+@import url("reset.css");
+
+
+body {
+    font-family:'poppins' sans-serif;
+    min-height: 100vh;
+    background: var(--back-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Login Card */
+.login-card {
+    width: 450px;
+    background: rgba(255, 255, 255 );
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 2rem;
+}
+
+/* .login-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, .15);
+    transform: rotate(-6deg);
+    border-radius: 10px;
+    z-index: -1; */
+}
+/* ---------- */
+
+/* Login Card Logo */
+.login-card{
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.login-card-logo img {
+    width: 60px;
+}
+/* ---------- */
+
+/* Login Card Standard */
+.login-card,
+.login-card-header,
+.login-card-footer {
+    text-align: center;
+}
+
+.login-card a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+}
+/* ---------- */
+
+/* Login Card Header */
+.login-card-header {
+    margin-bottom: 2rem;
+}
+
+.login-card-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.login-card-header h1{
+    color: var(--text-color) !important;
+    margin-top: 1rem;
+}
+
+.login-card-header h1+div {
+    font-size: calc(1rem * .8);
+    /* opacity: .8; */
+    color: var(--text-color);
+}
+/* ---------- */
+
+/* Login Card Form */
+.login-card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-card-form .form-item {
+    position: relative;
+}
+
+.login-card-form .form-item .form-item-icon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.login-card-form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-card-form .form-item-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+/* ---------- */
+
+/* Login Card Footer */
+.login-card-footer {
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+}
+/* ---------- */
+
+/* Login Card Form Elements */
+.login-card input[type="text"],
+.login-card input[type="password"],
+.login-card input[type="email"] {
+    border: 1px solid var(--text-color);
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.login-card input:focus {
+    background: white;
+}
+
+.login-card input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: black;
+    color: var(--text-color);
+    cursor: pointer;
+}
+div .remember{
+    color:var(--text-color);
+    margin-left: -4px;
+    cursor: pointer;
+}
+button a{
+    color: var(--bg-color);
+}
+
+
+.login-card button {
+    background: var(--main-color);
+    color: white !important;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+button[type="submit"] a{
+    color: var(--bg-color) !important;
+    margin-left: -4.2rem;
+    /* text-decoration: underline 1px solid var(--bg-color); */
+    padding-top: 1px;
+    letter-spacing: -3px;
+
+}
+   
+
+.login-card button:hover {
+    background-color: #fa1216;
+    cursor: pointer;
+}
+/* ---------- */
+
+/* Login Card Social Buttons */
+.login-card-social {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.login-card-socialdiv {
+    opacity: .8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(1rem * .8);
+}
+
+.login-card-social-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.login-card-social-btns a {
+    text-decoration: none;
+    display: flex;
+    background: var(--bg-color) !important;
+    padding: 2px !important;
+    font-size: 2rem !important;
+    border-radius: 50% !important;
+    border: 4px solid rgb(2,3,7,0.4) !important;
+    color: var(--main-color) !important;
+}
+
+.login-card-social-btns a:hover {
+    text-decoration: none;
+    background: var(--main-color) !important;
+    color: var(--bg-color) !important;
+    transition: 0.2s all linear !important;
+}
+}
+/* ---------- */
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    body {
+        padding: 2rem 0;
+    }
+
+    .login-card {
+        width: 280px;
+        padding: 2rem;
+    }
+
+}
+/* ---------- */

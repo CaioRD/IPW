@@ -1,20 +1,8 @@
 let header = document.querySelector('header');
-let menu = document.querySelector('#menu-icon');
-let navBar = document.querySelector('.navBar');
 
 window.addEventListener('scroll', () => {
   header.classList.toggler('.shadow', window.scrollY > 0);
 });
-
-menu.onclick = () => {
-  menu.classList.toggle('bx-x');
-  navBar.classList.toggle('active');
-}
-window.onscoll = () => {
-  menu.classList.remove('bx-x');
-  navBar.classList.remove('active');
-}
-
 
 var swiper = new Swiper(".homeSwiper", {
     spaceBetween: 30,
